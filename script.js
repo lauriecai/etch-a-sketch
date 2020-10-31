@@ -9,13 +9,13 @@ gridContainer.classList.add('gridContainer');
 game.appendChild(gridContainer);
 
 // generate grid item and add to grid
-function generateGrid() {
+function generateGridItem() {
     const gridItem = document.createElement('div');
     gridItem.classList.add('gridItem');
     gridContainer.appendChild(gridItem);
 }
 
-// repeat 16 times
-for (let i = 0; i < 16; i++) {
-    generateGrid();
+// generate entire grid (16x16 = 256 grid items)
+for (let i = 0; i < 256; i++) {
+    generateGridItem();
 }
