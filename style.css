@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 321px;
+    width: 360px;
     margin: 20px 0;
 }
 h1 {
@@ -43,13 +43,14 @@ button:focus {
 /* grid container */
 .gridContainer {
     display: inline-grid;
-    grid-template-rows: repeat(16, 20px);
-    grid-template-columns: repeat(16, 20px);
     border-bottom: 1px solid indianred;
     border-left: 1px solid indianred;
+    width: 360px;
+    height: 360px;
 }
 /* default grid item */
 .gridItem {
+
     border-top: 1px solid indianred;
     border-right: 1px solid indianred;
 }
