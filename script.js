@@ -1,5 +1,9 @@
 // selector
 const game = document.querySelector('.game');
+const button = document.querySelector('.button');
+
+// variables
+let boardDimension = 16;
 
 // create grid div
 const gridContainer = document.createElement('div');
@@ -16,7 +20,7 @@ function generateGridItem() {
 }
 
 // generate entire grid (16x16 = 256 grid items)
-for (let i = 0; i < 256; i++) {
+for (let i = 0; i < (Math.pow(boardDimension, 2)); i++) {
     generateGridItem();
 }
 
@@ -30,3 +34,23 @@ for (let i = 0; i < 256; i++) {
         gridItems[i].classList.add('activated');
     })
 }
+
+// clear board
+function clearBoard() {
+    for (let i = 0; i < 256; i++) {
+        gridItems[i].classList.remove('activated');
+    }
+}
+
+// prompt grid size
+function promptGrid() {
+    boardDimension = prompt('How many squares do you want per side on your next grid?');
+}
+
+// button behavior
+button.addEventListener('click', () => {
+    clearBoard();
+    setTimeout(function() {
+        promptGrid();
+    }, 1000); 
+})

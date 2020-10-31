@@ -32,6 +32,14 @@ button {
     padding: 10px 16px;
     border-radius: 6px;
 }
+button:hover {
+    cursor: pointer;
+    background: lightcoral;
+    color: white;
+}
+button:focus {
+    outline: none;
+}
 /* grid container */
 .gridContainer {
     display: inline-grid;
