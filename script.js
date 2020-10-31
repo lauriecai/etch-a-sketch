@@ -19,3 +19,15 @@ function generateGridItem() {
 for (let i = 0; i < 256; i++) {
     generateGridItem();
 }
+
+// obtain nodelist of all grid items
+const gridItems = document.querySelectorAll('.gridItem');
+
+
+
+
+// color grid item on hover
+// gridItem.addEventListener('mouseover', () => {
+//     alert('hello');
+//     //gridItem.classList.add('activated');
+// });

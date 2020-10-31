@@ -7,8 +7,13 @@
     border-left: 1px solid grey;
 }
 
-/* grid item */
+/* default grid item */
 .gridItem {
     border-top: 1px solid gray;
     border-right: 1px solid gray;
+}
+
+/* hovered grid item */
+.activated {
+    color: lightcoral;
 }
