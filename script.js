@@ -22,12 +22,11 @@ for (let i = 0; i < 256; i++) {
 
 // obtain nodelist of all grid items
 const gridItems = document.querySelectorAll('.gridItem');
+console.log(gridItems[0]);
 
-
-
-
-// color grid item on hover
-// gridItem.addEventListener('mouseover', () => {
-//     alert('hello');
-//     //gridItem.classList.add('activated');
-// });
+// add event listener to each grid item
+for (let i = 0; i < 256; i++) {
+    gridItems[i].addEventListener('mouseover', () => {
+        gridItems[i].classList.add('activated');
+    })
+}

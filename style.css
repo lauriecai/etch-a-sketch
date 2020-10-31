@@ -15,5 +15,5 @@
 
 /* hovered grid item */
 .activated {
-    color: lightcoral;
+    background-color: lightcoral;
 }
