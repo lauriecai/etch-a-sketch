@@ -1,18 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* game */
+.game {
+    margin: 20px;
+}
+/* top bar */
+.top-bar {
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 321px;
+    margin: 20px 0;
+}
+h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+}
+p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+}
+/* button */
+button {
+    display: block;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+}
 /* grid container */
 .gridContainer {
     display: inline-grid;
     grid-template-rows: repeat(16, 20px);
     grid-template-columns: repeat(16, 20px);
-    border-bottom: 1px solid grey;
-    border-left: 1px solid grey;
+    border-bottom: 1px solid indianred;
+    border-left: 1px solid indianred;
 }
-
 /* default grid item */
 .gridItem {
-    border-top: 1px solid gray;
-    border-right: 1px solid gray;
+    border-top: 1px solid indianred;
+    border-right: 1px solid indianred;
 }
-
 /* hovered grid item */
 .activated {
     background-color: lightcoral;

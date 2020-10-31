@@ -1,5 +1,5 @@
 // selector
-const game = document.getElementById('game');
+const game = document.querySelector('.game');
 
 // create grid div
 const gridContainer = document.createElement('div');
