@@ -1,4 +1,4 @@
-// -----SELECTORS-----
+// -----SELECTORS & VARIABLES-----
 const game = document.querySelector('.game');
 const button = document.querySelector('.button');
 let boardDimension, gridItems;

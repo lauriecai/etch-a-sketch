@@ -5,7 +5,10 @@
 }
 /* game */
 .game {
-    margin: 20px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 /* top bar */
 .top-bar {
@@ -14,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 360px;
+    width: 600px;
     margin: 20px 0;
 }
 h1 {
@@ -45,12 +48,11 @@ button:focus {
     display: inline-grid;
     border-bottom: 1px solid indianred;
     border-left: 1px solid indianred;
-    width: 360px;
-    height: 360px;
+    width: 600px;
+    height: 600px;
 }
 /* default grid item */
 .gridItem {
-
     border-top: 1px solid indianred;
     border-right: 1px solid indianred;
 }
